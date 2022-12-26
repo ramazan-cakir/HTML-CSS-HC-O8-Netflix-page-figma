@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <h3 id="description">
+          Thank you for signing up to Netflix.Tell me more about yourself.
+        </h3>
+      </header>
+      <section id="survey-form-container">
+        <form action="result.html" method="get">
+          <!-- Backend de kim karşılayacak onun result dosyası ekleniyor. Method u da get pek güvenli bir metod değildir. -->
+          <div class="input-box">
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label>
+            <br />
+            <input type="number" name="age" id="age" placeholder="age" />
+          </div>
+
+          <div class="input-box">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="enter your Email"
+            />
+          </div>
+          <div class="input-box">
+            <label for="">Content Type</label>
+            <br />
+
+            <select name="content" id="dropdown">
+              <option value="movies">Movies</option>
+              <option value="series" selected>Series</option>
+              <!--Selected yaparak sayfada series seçili gelir-->
+              <option value="tv shows">TV Shows</option>
+            </select>
+          </div>
+
+          <div class="input-box" id="checkbox">
+            <label for="">Movie Type</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie1"
+              id="first-check"
+              value="Comedy"
+            />
+            <label for="first-check">Comedy</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie2"
+              id="second-check"
+              value="Action"
+            />
+            <label for="second-check">Action</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie3"
+              id="third-check"
+              value="Romance"
+            />
+            <label for="third-check">Romance</label>
+          </div>
+
+          <br /><br /><br />
+
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
